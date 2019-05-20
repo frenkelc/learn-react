@@ -6,6 +6,7 @@ import './Components&Props/Avatar';
 import './Components&Props/UserInfo';
 import './Components&Props/Commens';
 import './State&Lifecycle/Clock'
+import './HandlingEvents/Toggle'
 
 <div id="root"></div>
 
@@ -25,6 +26,7 @@ ReactDOM.render(
       author={comment.author}
     />,
     <Clock/>,
+    <Toggle/>,
     document.getElementByIg('root')
 );
 
