@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './FormatDate';
-import './Avatar';
-import './UserInfo';
-import './Commens';
+import './Components&Props/FormatDate';
+import './Components&Props/Avatar';
+import './Components&Props/UserInfo';
+import './Components&Props/Commens';
 
 <div id="root"></div>
 
@@ -22,8 +22,8 @@ ReactDOM.render(
       date={comment.date}
       text={comment.text}
       author={comment.author}
-  />,
-  document.getElementByIg('root')
+    />,
+    document.getElementByIg('root')
 );
 
   
