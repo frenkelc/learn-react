@@ -5,6 +5,7 @@ import './Components&Props/FormatDate';
 import './Components&Props/Avatar';
 import './Components&Props/UserInfo';
 import './Components&Props/Commens';
+import './State&Lifecycle/Clock'
 
 <div id="root"></div>
 
@@ -23,6 +24,7 @@ ReactDOM.render(
       text={comment.text}
       author={comment.author}
     />,
+    <Clock/>,
     document.getElementByIg('root')
 );
 
