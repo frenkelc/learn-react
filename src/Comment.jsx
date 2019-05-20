@@ -7,7 +7,7 @@ import './UserInfo';
   function Comment(props){
     return(
       <div className="Comment">
-        /*<UserInfo user={props.auther}/>*/
+        <UserInfo user={props.auther}/>
         <div className="Comment-text">{props.text}</div>
         <div className="Comment-date">
           {formatDate(props.date)}
