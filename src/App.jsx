@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import './index.jsx';
+import './index';
 import './ComponentsAndProps/FormatDate';
 import './ComponentsAndProps/Avatar';
 import './ComponentsAndProps/UserInfo';
 import './ComponentsAndProps/Commens';
 import './StateAndLifecycle/Clock'
 import './HandlingEvents/Toggle'
+import './ConditionalRendering/Greeting'
 
 class App extends React.Component{
   constructor(props){
@@ -32,6 +33,7 @@ class App extends React.Component{
         /> 
       <Clock/>
       <Toggle/>
+      <Greeting isLoggedIn={false}/>
     </div>
     );
   }
@@ -41,5 +43,8 @@ ReactDOM.render(
     <App/>,
     document.getElementByIg('root')
 );
+
+export default App;
+
 
   
