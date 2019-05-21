@@ -2,22 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './Greeting.css';
 
+function UserGreeting(props){
+  return <h1>Welcome back!</h1>
+}
+
+function GuestGreeting(props){
+  return <h1>Please sign up.</h1>
+}
+
 class Greeting extends React.Component{
   constructor(props){
     super(props);
     this.state = {isloggedIn: false};
   }
 
-  UserGreeting(props){
-    return <h1>Welcome back!</h1>
-  }
-  
-  GuestGreeting(props){
-    return <h1>Please sign up.</h1>
-  }
-  
+
   render(){
-    const isLiggedIn =ths.state.isLoggedIn;
+    const isLoggedIn =this.state.isLoggedIn;
+    let h1;
     if(isLoggedIn){
       h1 = <UserGreeting/>;
     }
