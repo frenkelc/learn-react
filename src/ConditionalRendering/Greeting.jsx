@@ -23,7 +23,10 @@ class Greeting extends React.Component{
     if(isLoggedIn){
       h1 = <UserGreeting/>;
     }
-    h1 = <GuestGreeting/>;
+    else{
+      h1 = <GuestGreeting/>;
+    }
+
     return(
       <div>{h1}</div>
     );
