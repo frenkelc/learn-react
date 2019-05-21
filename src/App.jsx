@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import './index';
 import Comment from './ComponentsAndProps/Comment';
-import Clock from './StateAndLifecycle/Clock'
-import Toggle from './HandlingEvents/Toggle'
-import Greeting from './ConditionalRendering/Greeting'
+import Greeting from './ConditionalRendering/Greeting';
+import Toggle from './HandlingEvents/Toggle';
+import './index';
+import Clock from './StateAndLifecycle/Clock';
 
 class App extends React.Component{
   constructor(props){
@@ -24,9 +23,9 @@ class App extends React.Component{
     return(
      <div>
         <Comment
-        date={comment.date}
-        text={comment.text}
-        author={comment.author}
+        date={this.comment.date}
+        text={this.comment.text}
+        author={this.comment.author}
         /> 
       <Clock/>
       <Toggle/>
