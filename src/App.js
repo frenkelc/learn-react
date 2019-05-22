@@ -5,7 +5,7 @@ import Clock from './StateAndLifecycle/Clock';
 import Toggle from './HandlingEvents/Toggle';
 import Greeting from './ConditionalRendering/Greeting';
 import './index';
-
+/*!!!!!!!!!!!!!!!Don't delete this file!!!!!!!!!!!!*/
 class App extends React.Component{
   constructor(props){
     super(props);

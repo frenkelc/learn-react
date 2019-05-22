@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Clock.css';
 
 class Clock extends React.Component{
@@ -33,3 +32,5 @@ class Clock extends React.Component{
     );
   }
 }
+
+export default Clock;
