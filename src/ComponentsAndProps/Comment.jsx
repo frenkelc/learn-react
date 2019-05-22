@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Comment.css';
 
 
-class comment extends React.Component{
+class Comment extends React.Component{
   constructor(props){
-
+    super(props);
   }
 
   formatDate(date) {
@@ -25,7 +24,7 @@ class comment extends React.Component{
   UserInfo(props) {
     return (
       <div className="UserInfo">
-        <Avatar user={props.user} />
+        {/* <Avatar user={props.user} /> */}
         <div className="UserInfo-name">{props.user.name}</div>
       </div>
     );
@@ -34,13 +33,14 @@ class comment extends React.Component{
   render(){
     return(
       <div className="Comment">
-        <UserInfo user={props.auther}/>
-        <div className="Comment-text">{props.text}</div>
+        {/* <UserInfo user={props.auther}/> */}
+        <div className="Comment-text">{this.props.text}</div>
         <div className="Comment-date">
-          {formatDate(props.date)}
+          {this.formatDate(this.props.date)}
         </div>
       </div>
     );
   }
 } 
  
+export default Comment;

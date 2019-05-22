@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Greeting.css';
 
 function UserGreeting(props){
@@ -34,3 +33,4 @@ class Greeting extends React.Component{
   
 }
 
+export default Greeting;

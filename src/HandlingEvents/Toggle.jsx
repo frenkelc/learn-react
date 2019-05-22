@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Toggle.css';
-import { stat } from 'fs';
 
 class Toggle extends React.Component {
    constructor(props){
@@ -18,9 +16,11 @@ class Toggle extends React.Component {
 
    render(){
       return(
-        <button onClick={this.handleClick()}>
+        <button onClick={() => this.handleClick()}>
           {this.state.isToggleOn ? 'ON' : 'OFF'}
         </button>
       );
    }
 }
+
+export default Toggle;
