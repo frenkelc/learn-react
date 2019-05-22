@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './Comment.css';
 
 
-class comment extends React.Component{
+class Comment extends React.Component{
   constructor(props){
-
+     super(props);
   }
 
   formatDate(date) {
@@ -37,7 +37,7 @@ class comment extends React.Component{
         <UserInfo user={props.auther}/>
         <div className="Comment-text">{props.text}</div>
         <div className="Comment-date">
-          {formatDate(props.date)}
+          {this.formatDate(this.props.date)}
         </div>
       </div>
     );

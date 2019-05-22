@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import './index';
 import Comment from './ComponentsAndProps/Comment';
-import Clock from './StateAndLifecycle/Clock'
-import Toggle from './HandlingEvents/Toggle'
-import Greeting from './ConditionalRendering/Greeting'
+import Clock from './StateAndLifecycle/Clock';
+import Toggle from './HandlingEvents/Toggle';
+import Greeting from './ConditionalRendering/Greeting';
 
 class App extends React.Component{
   constructor(props){
