@@ -3,7 +3,7 @@ import './App.css';
 import Comment from './ComponentsAndProps/Comment';
 import Clock from './StateAndLifecycle/Clock';
 import Toggle from './HandlingEvents/Toggle';
-import Greeting from './ConditionalRendering/Greeting';
+import LoginControl from './ConditionalRendering/LoginControl';
 import './index';
 
 class App extends React.Component{

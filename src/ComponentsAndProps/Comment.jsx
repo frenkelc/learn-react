@@ -1,47 +1,42 @@
 import React from 'react';
 import './Comment.css';
-import Avatar from './ComponentsAndProps/Avatar'
+import { userInfo } from 'os';
 
 
-class Comment extends React.Component{
-  constructor(props){
-     super(props);
-  }
+function formatDate(date) {
+  return date.toLocaleDateString();
+}
 
-  formatDate(date) {
-    return date.toLocaleDateString();
-  }
+function Avatar(props) {
+  return (
+    <img
+      className="Avatar"
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    />
+  );
+}
 
-  Avatar(props) {
-    return (
-      <img
-        className="Avatar"
-        src={props.user.avatarUrl}
-        alt={props.user.name}
-      />
-    );
-  }
+function UserInfo(props) {
+  return (
+    <div className="UserInfo">
+      {<Avatar user={props.user} /> }
+      <div>{props.user.name}</div>
+    </div>
+  );
+}
 
-  UserInfo(props) {
-    return (
-      <div className="UserInfo">
-        {/* <Avatar user={props.user} /> */}
-        <div className="UserInfo-name">{props.user.name}</div>
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <UserInfo user={props.author} />
+      <div className="Comment-text">{props.text}</div>
+      <div className="Comment-date">
+        {formatDate(props.date)}
       </div>
-    );
-  }
+    </div>
+  );
+}
+  
 
-  render(){
-    return(
-      <div className="Comment">
-        {/* <UserInfo user={props.auther}/> */}
-        <div className="Comment-text">{this.props.text}</div>
-        <div className="Comment-date">
-          {this.formatDate(this.props.date)}
-        </div>
-      </div>
-    );
-  }
-} 
- 
 export default Comment;

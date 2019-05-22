@@ -3,18 +3,18 @@ import './App.css';
 import Comment from './ComponentsAndProps/Comment';
 import Clock from './StateAndLifecycle/Clock';
 import Toggle from './HandlingEvents/Toggle';
-import Greeting from './ConditionalRendering/Greeting';
+import LoginControl from './ConditionalRendering/LoginControl';
 import './index';
 /*!!!!!!!!!!!!!!!Don't delete this file!!!!!!!!!!!!*/
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state ={comment : {
-      date: new Date(),
-      text: 'I hope you enjoy learning React!',
-      author: {
-        name: 'Hello Kitty',
-        avatarUrl: 'https://placekitten.com/g/64/64',
+                    date: new Date(),
+                    text: 'I hope you enjoy learning React!',
+                    author: {
+                        name: 'Hello Kitty',
+                        avatarUrl: 'https://placekitten.com/g/64/64',
       }
     }};
   }
@@ -29,7 +29,7 @@ class App extends React.Component{
         /> 
       <Clock/>
       <Toggle/>
-      <Greeting isLoggedIn={false}/>
+      <LoginControl/>
     </div>
     );
   }
