@@ -5,6 +5,11 @@ import Clock from './StateAndLifecycle/Clock';
 import Toggle from './HandlingEvents/Toggle';
 import LoginControl from './ConditionalRendering/LoginControl';
 import List from './ListsAndKeys/List';
+import NameForm from './Forms/NameForm';
+import EssayForm from './Forms/EssayForm';
+import FlavorForm from './Forms/FlavorForm';
+import Reservation from './Forms/Reservation';
+
 import './index';
 /*!!!!!!!!!!!!!!!Don't delete this file!!!!!!!!!!!!*/
 class App extends React.Component{
@@ -28,10 +33,14 @@ class App extends React.Component{
         text={this.state.comment.text}
         author={this.state.comment.author}
         /> 
-      <Clock/>
-      <Toggle/>
-      <LoginControl/>
-      <list/>
+      <Clock/><br/>
+      <Toggle/><br/>
+      <LoginControl/><br/>
+      <list/><br/>
+      <NameForm/><br/>
+      <EssayForm/><br/>
+      <FlavorForm/><br/>
+      <Reservation/><br/>
     </div>
     );
   }
