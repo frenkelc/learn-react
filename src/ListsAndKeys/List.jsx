@@ -15,16 +15,34 @@ class List extends React.Component{
   }
 }
 
-function NumberList(props){
+
+function ListItems(props){
+  return <li>{props.value}</li>;
+}
+
+  function NumberList(props){
   const numbers = this.state.numbers;
+  
+  return(
+    <ul>
+      {numbers.map((number) =>
+      <listItem key={number.toString()}
+                value={number} />
+      )}
+    </ul>
+  );
+
+  /*another way with tha same result
   const listItems = numbers.map((number) =>
-  <li key={number.toString()}>
-    {number}</li>
+   <listItem key={number.toString()}
+            value={number}/>
 
   );
   return(
-    <ul>{listItems}</ul>
-  );
+    <ul>
+      {listItems}
+      </ul>
+  );*/
 }
 
 
