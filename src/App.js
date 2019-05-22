@@ -4,6 +4,7 @@ import Comment from './ComponentsAndProps/Comment';
 import Clock from './StateAndLifecycle/Clock';
 import Toggle from './HandlingEvents/Toggle';
 import LoginControl from './ConditionalRendering/LoginControl';
+import List from './ListsAndKeys/List';
 import './index';
 /*!!!!!!!!!!!!!!!Don't delete this file!!!!!!!!!!!!*/
 class App extends React.Component{
@@ -30,10 +31,10 @@ class App extends React.Component{
       <Clock/>
       <Toggle/>
       <LoginControl/>
+      <list/>
     </div>
     );
   }
-
 }
 
 export default App;
