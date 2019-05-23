@@ -9,6 +9,7 @@ import NameForm from './Forms/NameForm';
 import EssayForm from './Forms/EssayForm';
 import FlavorForm from './Forms/FlavorForm';
 import Reservation from './Forms/Reservation';
+import Calculator from './LiftingStateUp/Calculator';
 
 import './index';
 /*!!!!!!!!!!!!!!!Don't delete this file!!!!!!!!!!!!*/
@@ -41,6 +42,7 @@ class App extends React.Component{
       <EssayForm/><br/>
       <FlavorForm/><br/>
       <Reservation/><br/>
+      <Calculator/><br/>
     </div>
     );
   }

@@ -4,13 +4,13 @@ import './List.css';
 class List extends React.Component{
   constructor(props){
     super(props);
-    this.state = {numbers: [1, 2, 3, 4, 5]};
+    this.porps = {numbers: [1, 2, 3, 4, 5]};
   }
   
   render()
   {
     return(
-        <NumberList numbers={this.state.numbers} />
+        <NumberList numbers={this.props.numbers} />
     );
   }
 }
@@ -21,7 +21,7 @@ function ListItems(props){
 }
 
   function NumberList(props){
-  const numbers = this.state.numbers;
+  const numbers = this.props.numbers;
   
   return(
     <ul>
