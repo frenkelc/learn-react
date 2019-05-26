@@ -37,7 +37,7 @@ class App extends React.Component{
       <Clock/><br/>
       <Toggle/><br/>
       <LoginControl/><br/>
-      <list/><br/>
+      <List/><br/>
       <NameForm/><br/>
       <EssayForm/><br/>
       <FlavorForm/><br/>

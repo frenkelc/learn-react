@@ -4,31 +4,30 @@ import './List.css';
 class List extends React.Component{
   constructor(props){
     super(props);
-    this.porps = {numbers: [1, 2, 3, 4, 5]};
+    this.state = {numbers: [1, 2, 3, 4, 5]};
   }
   
   render()
   {
     return(
-        <NumberList numbers={this.props.numbers} />
+        <NumberList numbers={this.state.numbers} />
     );
   }
 }
 
 
-function ListItems(props){
+function ListItem(props){
   return <li>{props.value}</li>;
 }
 
   function NumberList(props){
-  const numbers = this.props.numbers;
-  
+  const numbers = props.numbers;
   return(
     <ul>
-      {numbers.map((number) =>
-      <listItem key={number.toString()}
+    {numbers.map((number) =>
+      <ListItem key={number.toString()}
                 value={number} />
-      )}
+     )}
     </ul>
   );
 
